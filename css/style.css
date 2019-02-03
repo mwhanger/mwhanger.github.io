@@ -1,0 +1,26 @@
+/* CSS For Hiding 'Skip to Main' link unless it receives keyboard focus adapted from https://webaim.org/techniques/css/invisiblecontent/ */
+a.skip-main{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+a.skip-main:focus{
+  position:static;
+  width:auto;
+  height:auto;
+}
+nav{
+  font-size: 16px;
+  text-align: left;
+}
+nav ul li{
+  display: block;
+  list-style-type: none;
+}
+nav a.current{
+  font-style: italic;
+  text-transform: uppercase;
+}
